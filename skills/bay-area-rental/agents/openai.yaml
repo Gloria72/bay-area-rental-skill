@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bay Area Rental / 湾区租房排雷"
+  short_description: "Bilingual apartment screening, review audit, and unit ranking for Bay Area renters."
+  default_prompt: "Use $bay-area-rental to screen Bay Area apartments in Chinese or English and rank specific units by quietness, safety, package/garage risk, light, privacy, and fit."
