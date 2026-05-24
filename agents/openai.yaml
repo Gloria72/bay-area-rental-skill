@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bay Area Rental"
+  short_description: "湾区租房筛选、背调、房号排序助手"
+  default_prompt: "Use $bay-area-rental to screen Bay Area apartments and rank specific units by quietness, safety, light, and fit."
