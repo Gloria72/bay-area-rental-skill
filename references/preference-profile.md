@@ -13,6 +13,7 @@ Primary values:
 - In-unit washer/dryer, dishwasher, A/C, and reasonable storage.
 - A building where management is responsive and basic operations are not chaotic.
 - A lively downtown can be acceptable if it is like Grove Street / The Hendrix: walkable, restaurant-heavy, and urban, but not dominated by hard noise sources.
+- Screening answers should be blunt and evidence-backed, not promotional. The user dislikes "场面话" and wants mistakes corrected quickly.
 
 ## Default Fit Rules
 
@@ -21,12 +22,16 @@ Primary values:
 - Budget target is usually `<= $3,900`; `$3,800` feels more comfortable. Treat `$4,000+` as high-budget and require a clear reason.
 - Mountain View and Sunnyvale are preferred. Santa Clara can work only after strict review screening. North San Jose and Santa Clara new-build clusters need extra skepticism because many have garage/package/security/noise complaints.
 - Controlled access is helpful but not enough by itself. Real review history around car break-ins, garage gates, packages, and management response matters more.
+- Avoid Irvine Company by default. Exclude Miro by default because the user wants to pass it after dynamic-pricing/price-hike frustration, even though its high-rise structure and concierge model can be strong.
+- Treat SRG/Sares Regis, Prometheus, and Shea as useful positive signals only after current review and geography checks. Greystar is a caution flag, not an automatic delete by itself.
 
 ## Review Audit Rules
 
 Use official pages for features, not for resident experience. Use recent resident reviews for lived risks.
 
 Read the worst recent reviews before trusting ratings. Aggregate scores can hide severe red flags, and platforms can disagree. A building with `4.5/5` on one site and many recent `1-2 star` complaints elsewhere should be treated as mixed, not safe.
+
+When using prior GPT/Gemini/user notes, preserve the user's later corrections over earlier AI recommendations. If a chat transcript first recommends a property and later admits it missed Google Maps, ApartmentRatings, geography, or review issues, use the later stricter conclusion.
 
 Treat repeated patterns as stronger than one-off complaints. Delete or downgrade if multiple recent reviews mention the same renter-core problem:
 
@@ -38,12 +43,14 @@ Treat repeated patterns as stronger than one-off complaints. Delete or downgrade
 - Thin walls, upstairs footsteps, train horns, low-frequency vibration.
 - Roaches, bugs, ants, rats, mold, water quality, or unresolved maintenance.
 - Parking permit/towing confusion, surprise fees, or key/fob process problems.
+- Airbnb/corporate housing/short-term rentals creating high turnover, tailgating, hallway strangers, package confusion, or weaker neighbor stability.
 
 Be extra skeptical of:
 
 - Brand-new buildings with short or incentivized review samples.
 - Greystar-managed properties: not automatic rejection, but a caution flag when paired with weak operations.
 - Beautiful new buildings near highways, light rail, airports, stadium/event areas, or industrial corridors.
+- Garden-style or very large communities when the parking is surface/covered rather than enclosed, delivery paths are confusing, or the garage/package system is overloaded.
 
 ## Location And Noise Rules
 
@@ -57,12 +64,28 @@ Hard noise sources to avoid or heavily discount:
 
 - `101`, `237`, `280`, `880`.
 - Lawrence Expressway, El Camino, Mathilda, Central Expressway.
-- Caltrain, VTA, light rail, especially horn-facing or track-facing units.
+- San Tomas Expressway, Saratoga Ave, Capitol Expressway, and other high-speed roads with late-night street racing or truck/ambulance exposure.
+- Caltrain, BART, VTA, light rail, especially horn-facing, track-facing, or transit-hub-adjacent units.
 - SJC airport flight paths, Moffett/industrial/office corridors.
 - Levi's Stadium / Great America event-day traffic and crowd noise.
+- Public parking garages, especially low/mid floors facing ramp, top deck, alarms, or tire-squeal paths.
 - Garage gates, garage ramps, trash rooms, loading areas, elevators, mechanical rooms.
 - Amenity courtyards, BBQ/fireplace zones, pools/spas, gyms, rooftops, lounges.
 - Above retail, direct street access, or low-floor street-facing units.
+
+## Parking, Packages, And Delivery
+
+Prefer resident-only gated or underground parking with fob-controlled elevator access, anti-tailgating design, cameras, and clean recent security reviews. A garage being gated is not enough if reviews describe broken gates, tailgating, car break-ins, or management apathy.
+
+Prefer monitored package rooms, Luxer One/Amazon Hub, or an indoor controlled pickup area. Downgrade lobby/hallway pileups, package-room crowding, damaged mailboxes, and management that refuses to help with missing deliveries.
+
+For frequent Uber Eats/food delivery, check driver access and legal short-term parking. Large maze-like garden communities, El Camino curbside buildings, stadium/event zones, and transit hubs can make food end up outside, at the wrong building, or unmonitored.
+
+## Structure Reality
+
+True all-concrete Type I rental buildings are rare in Mountain View, Sunnyvale, and Santa Clara. Many "luxury" apartments are 5-over-2 or podium style: concrete garage/base with wood residential floors.
+
+For podium/wood buildings, require top floor when quiet sleep is a core requirement, then choose internal/courtyard/shielded exposure away from hard noise. For downtown San Jose high-rises, require high floor, usually `15+`, and avoid public-garage/street-facing mid-low floors.
 
 ## Unit Scoring
 
