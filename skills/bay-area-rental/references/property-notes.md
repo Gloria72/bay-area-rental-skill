@@ -1,6 +1,6 @@
 # Property Notes
 
-These notes were distilled from user-provided PDFs/CSV and a Gemini share dated around 2026-05-24. Prices, availability, incentives, and reviews are snapshots. Re-verify current details before giving live recommendations.
+These notes were distilled from user-provided PDFs/CSV, a Gemini share, and a later direct paste of the Gemini conversation dated around 2026-05-24. Prices, availability, incentives, and reviews are snapshots. Re-verify current details before giving live recommendations.
 
 ## Standing Rules From The Source Notes
 
@@ -19,8 +19,9 @@ Default shortlist direction:
 1. `The Village Residences` and `Cherry Orchard Apartment Homes` as practical Shea-led candidates, only with top-floor/internal unit logic.
 2. `Madrone` and `The Marlo` as Mountain View candidates to verify with current reviews and exact unit exposure.
 3. `The Dean` only if budget widens; it is high quality but the user already pushed back on price.
-4. Keep `Miro` excluded unless the user reopens it.
-5. Do not keep `Cobalt` as a default top pick. Later review/geography audit downgraded it to pass/avoid for this user.
+4. `Misora` only if the user explicitly wants a concrete/hotel-service Santana Row option and accepts commercial-area tradeoffs.
+5. Keep `Miro` excluded unless the user reopens it.
+6. Do not keep `Cobalt` as a default top pick. Later review/geography audit downgraded it to pass/avoid for this user.
 
 ## Strong Or Worth-Rechecking Candidates
 
@@ -73,6 +74,26 @@ Why: newer Prometheus building in a quiet north Mountain View/office-area settin
 Risks: user said it is too expensive. Do not push it as a normal recommendation unless budget is reopened.
 
 Conditions: top/internal unit; verify current pricing and fees before mentioning as more than a benchmark.
+
+### Misora, San Jose / Santana Row
+
+Default status: `条件保留 / concrete-service option`.
+
+Why: source notes treat it as a rare high-service option with 24/7 concierge, controlled package/food handoff, separate secure resident parking, and stronger concrete/high-end construction than ordinary podium apartments.
+
+Risks: not a quiet residential pocket; Santana Row is a commercial/entertainment area with retail, restaurant, pool/amenity, and event-style activity. Price may also be high.
+
+Conditions: only consider quiet internal-courtyard or shielded units; avoid direct Santana Row commercial-street, pool, and nightlife-facing exposure. Verify current resident reviews before calling it "过关".
+
+### Savoy Apartments, Sunnyvale
+
+Default status: `unverified earlier recommendation / check from scratch`.
+
+Why: an earlier Gemini pass described it as a Prometheus Sunnyvale option with a warmer newer feel, residential setting, and package/food handling.
+
+Risk: that recommendation came before the user demanded stricter Google Maps/review reading, and it was not preserved as a final corrected top pick. Do not promote Savoy from memory alone.
+
+Conditions: current review audit required; check exact location, rail/road exposure, package/garage complaints, and top-floor/internal availability.
 
 ### Maxwell Sunnyvale
 
@@ -196,7 +217,23 @@ Default status: `exclude unless user reopens`.
 
 Why: built/completed around 2021, true San Jose high-rise concrete/Type I profile, SRG, 24/7 concierge, controlled parking/package handling. Hardware can fit the user's "fortress" model, but the user wants to pass because of price-hike/dynamic-pricing frustration.
 
-If reopened: prefer `15+` floor, internal/between-towers or shielded exposure. Avoid `906/907`-style low/mid street/public-garage-facing units; ParkSJ Fourth & St John garage/public garage exposure can create tire squeal, alarms, street noise, and public-street friction.
+If reopened: prefer `15+` floor, internal/between-towers or shielded exposure. Avoid `906/907`-style 9th-floor outward/street-facing units near N 4th St / the public garage; ParkSJ Fourth & St John Garage was treated in the source notes as roughly `6` levels, so 9th-floor units just above it can still catch tire squeal, alarms, low/mid-floor street noise, and public-street friction. If considering Miro on a lower floor, internal options like the source-mentioned `908/909/911/912` style are more plausible than outward `906/907`.
+
+### Chorus, San Francisco
+
+Default status: `out-of-core / conditional`.
+
+Why: source notes mention it as a 2021 SRG concrete/high-rise-style option with concierge/security strengths.
+
+Risks: San Francisco Hayes Valley/Mid-Market context is outside the user's usual South Bay focus and has external-environment tradeoffs. Do not include in South Bay lists unless the user broadens to SF.
+
+### Prism, San Francisco
+
+Default status: `out-of-core caution`.
+
+Why: source notes mention it as a 2023 Greystar concrete/high-rise-style option.
+
+Risks: Greystar caution plus source-note concerns about public-area maintenance/package issues; SF context is outside the usual target area.
 
 ### 188 West St James / Silvery Towers
 
@@ -294,7 +331,7 @@ Downtown Sunnyvale lifestyle can be acceptable only when exact unit avoids rail/
 
 ## Strict Delete Unless Fresh Evidence Changes It
 
-- `Estancia at Santa Clara`: user caught current car-break-in review; delete unless fresh evidence changes it.
+- `Estancia at Santa Clara`: user caught a current first-page car-break-in review after an earlier AI recommendation. Do not treat it as a Shea-style safe fallback; delete unless fresh evidence changes it.
 - `AIRE`: package theft, many cars smashed, garage/security concerns.
 - `Monticello`: false fire alarms, management/elevator/security/health issues; also Irvine-linked.
 - `Domain`: fire alarms, package theft, noise, move-out charges, Tasman light rail/freeway exposure.
@@ -322,8 +359,9 @@ When the user asks for a "final order" with known candidates, start from current
 
 1. The Village Residences or Cherry Orchard only with top-floor/internal unit discipline.
 2. Madrone / The Marlo when current review audit and exact exposure pass.
-3. Maxwell / 1250 Lakeside / ARLO / Landsby when available with correct high-floor shielded units.
-4. The Dean only if budget is reopened.
-5. Cobalt, Naya, Catalyst, Spruce, LINQ, Elan, Lofthouse, The Martin, Prado, One South Market, and Miro should not be quietly promoted without explaining their specific caveats or exclusions.
+3. Misora only if the user asks for a concrete/Santana Row/hotel-service option and accepts commercial-setting tradeoffs.
+4. Maxwell / 1250 Lakeside / ARLO / Landsby when available with correct high-floor shielded units.
+5. The Dean only if budget is reopened.
+6. Cobalt, Naya, Catalyst, Spruce, LINQ, Elan, Lofthouse, The Martin, Prado, One South Market, Savoy, and Miro should not be quietly promoted without explaining their specific caveats or exclusions.
 
 Never present this as current market truth without checking live data.

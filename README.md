@@ -23,7 +23,7 @@
 
 它专门服务“安全、干净、安静、新一点、物业负责、不丢快递/外卖、不砸车”的租房需求，尤其适合筛 Sunnyvale、Mountain View、Santa Clara、North San Jose、Cupertino 一带的 `1B/1B`、studio 和具体房号。
 
-这个 repo 只放蒸馏后的 skill 和参考规则，不包含原始 PDF/CSV/GPT 记录。
+这个 repo 只放蒸馏后的 skill 和参考规则，不包含原始 PDF/CSV/GPT/Gemini 记录全文。
 
 ## 它能做什么
 

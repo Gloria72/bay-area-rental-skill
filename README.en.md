@@ -23,7 +23,7 @@ Bay Area Rental Skill is a bilingual Chinese/English Codex skill for apartment s
 
 It is designed for renters who care about safety, cleanliness, quiet sleep, a newer apartment feel, responsible property management, secure package/food delivery, and lower car break-in risk. It is especially useful for screening `1B/1B`, studio, and exact-unit options in Sunnyvale, Mountain View, Santa Clara, North San Jose, and Cupertino.
 
-This repository contains only the distilled skill and reference rules. It does not include raw PDFs, CSVs, or GPT/Gemini conversation logs.
+This repository contains only the distilled skill and reference rules. It does not include raw PDFs, CSVs, or full GPT/Gemini conversation logs.
 
 ## What It Does
 
