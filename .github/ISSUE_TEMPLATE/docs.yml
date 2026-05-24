@@ -1,0 +1,19 @@
+name: Docs or prompt improvement
+description: Suggest a documentation, prompt, or example improvement
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should be clearer?
+      placeholder: "The install step / prompt / checklist could be clearer because..."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      placeholder: "Add an example for..."
+    validations:
+      required: true

@@ -1,0 +1,39 @@
+name: Apartment risk note
+description: Add or update an apartment screening note
+title: "[Apartment] "
+labels: ["apartment-note"]
+body:
+  - type: input
+    id: apartment
+    attributes:
+      label: Apartment name and city
+      placeholder: "Example: The Village Residences, Mountain View"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence summary
+      description: Summarize patterns. Do not paste private information or long copyrighted reviews.
+      placeholder: "Recent reviews mention..."
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Main risks
+      placeholder: "Noise, package, garage, pests, management, fees..."
+    validations:
+      required: true
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Unit conditions
+      placeholder: "Top floor only, avoid street-facing, avoid trash/elevator..."
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal information, lease details, phone numbers, emails, and exact private addresses.
+          required: true
