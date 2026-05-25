@@ -6,6 +6,7 @@
 - Added public guidance for contributing apartment notes while protecting privacy.
 - Added screening checklist, prompt library, and sample outputs.
 - Clarified that the skill is portable across Codex, ChatGPT, Claude, Gemini, and other AI assistants.
+- Replaced the generic Python package workflow with a repo-specific skill package validator.
 
 ## v1.1.0
 

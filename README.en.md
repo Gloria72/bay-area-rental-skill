@@ -17,6 +17,7 @@
   <img alt="Workflow" src="https://img.shields.io/badge/workflow-Review%20Audit%20%E2%86%92%20Unit%20Decision-purple">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Any%20AI%20Assistant-0aa3a3">
   <img alt="Language" src="https://img.shields.io/badge/language-中文%20%7C%20English-informational">
+  <img alt="Validate skill" src="https://github.com/Gloria72/bay-area-rental-skill/actions/workflows/validate-skill.yml/badge.svg">
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/Gloria72/bay-area-rental-skill?style=social">
 </p>
 
@@ -138,6 +139,7 @@ The core of this repo is not tied to one tool; it is a reusable rental-screening
 - [Prompt library](docs/prompt-library.md): Chinese, English, bilingual, floorplan, review audit, and final signing prompts.
 - [Roadmap](docs/roadmap.md): planned content and feature expansions.
 - [Contributing guide](CONTRIBUTING.md): how to add apartment notes, fix rules, or contribute examples.
+- GitHub workflow: automatically runs `python scripts/validate_skill.py .` to validate the public skill package.
 
 ## Repository Layout
 
