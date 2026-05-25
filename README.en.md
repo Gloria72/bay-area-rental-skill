@@ -1,10 +1,10 @@
-# BARS — Bay Area Rental Skill
+# BARS - Bay Area Rental Skill
 
 <p align="center">
   <img src="assets/logo.svg" alt="Bay Area Rental Skill Logo" width="400">
 </p>
 
-<h2 align="center">BARS — Bay Area Rental Skill</h2>
+<h2 align="center">BARS - Bay Area Rental Skill</h2>
 
 <p align="center">
   <a href="README.md">中文</a> | English
@@ -21,35 +21,60 @@
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/Gloria72/bay-area-rental-skill?style=social">
 </p>
 
-> Turn an apartment list into a risk screen, and a floorplan into a leasing decision. Works with Codex, ChatGPT, Claude, Gemini, or any AI assistant that supports project instructions.
+> A practical rental-screening note pack for AI assistants. Less apartment marketing, more review patterns, map reality, garage/package risk, food delivery flow, and exact-unit judgment.
 
-Bay Area Rental Skill is a bilingual Chinese/English portable AI assistant skill for apartment screening in the Bay Area. It turns listings, Google Maps/Yelp/ApartmentRatings reviews, floorplans, unit orientation, and personal preferences into practical rental decisions.
+Bay Area apartment hunting is exhausting because every building website looks clean, safe, and "luxury." The problems that actually change daily life are usually hidden in recent reviews, map placement, train/road/airport/stadium exposure, garage design, package rooms, delivery access, and the exact unit location.
 
-It is designed for renters who care about safety, cleanliness, quiet sleep, a newer apartment feel, responsible property management, secure package/food delivery, and lower car break-in risk. It is especially useful for screening `1B/1B`, studio, and exact-unit options in Sunnyvale, Mountain View, Santa Clara, North San Jose, and Cupertino.
+This repo turns those messy signals into a reusable judgment framework for AI assistants. Give it apartment names, reviews, listings, floorplans, or unit maps, and it helps decide what is worth touring, what only works under strict unit conditions, and what should be deleted from the shortlist.
 
-This repository contains only the distilled skill and reference rules. It does not include raw PDFs, CSVs, or full GPT/Gemini conversation logs.
+It can be installed as a Codex skill, or copied into ChatGPT, Claude, Gemini, or any assistant that supports project instructions.
 
-If this helps you avoid even one bad lease, a Star helps other Bay Area renters find it.
+If it helps you avoid even one bad lease, a Star makes it easier for other Bay Area renters to find.
 
-## Quick Start
+## Who This Is For
 
-1. Install the skill:
+- You are looking around Sunnyvale, Mountain View, Santa Clara, North San Jose, or Cupertino.
+- You do not want glossy websites, staged tours, or high average ratings to do the thinking for you.
+- You care about quiet sleep, upstairs footsteps, garage safety, package theft, food delivery, pests, surprise fees, and move-out charges.
+- You already have a few candidates and want an AI assistant to cross-check reviews, maps, floorplans, and unit exposure.
+- You want direct labels: top pick, conditional, backup, not recommended, or eliminate.
+
+## What This Is Not
+
+- It is not a live listing database. Prices, availability, concessions, and reviews must be rechecked.
+- It is not legal, lease, or safety advice.
+- It does not draft leasing emails by default. The default mode is screening, not negotiation.
+- It does not treat historical notes as permanent truth. New reviews, real maps, and exact units win.
+
+## Fastest Way To Use It
+
+If you use Codex:
 
 ```bash
 mkdir -p ~/.codex/skills/bay-area-rental
 rsync -a skills/bay-area-rental/ ~/.codex/skills/bay-area-rental/
 ```
 
-2. Ask your AI assistant:
+Then ask:
 
 ```text
-Use bay-area-rental.
+Use $bay-area-rental.
 Compare The Village, Cherry Orchard, Madrone, and The Marlo.
-My priority is quiet sleep > garage safety > packages/food delivery > natural light > price.
+My priorities are quiet sleep > garage safety > package/food delivery > natural light > price.
 Budget is under 3900, ideally 1B >= 700 sqft.
 ```
 
-3. Expect a compact decision table:
+If you use ChatGPT / Claude / Gemini:
+
+1. Open [skills/bay-area-rental/SKILL.md](skills/bay-area-rental/SKILL.md).
+2. Add it to your custom GPT, Claude Project, Gem, or project system prompt.
+3. For stronger memory, also attach:
+   - [preference-profile.md](skills/bay-area-rental/references/preference-profile.md)
+   - [property-notes.md](skills/bay-area-rental/references/property-notes.md)
+
+## What The Output Looks Like
+
+The goal is a decision table, not a long essay:
 
 | Rank | Apartment / Unit | Verdict | Why | Risks | Conditions |
 |---|---|---|---|---|---|
@@ -57,95 +82,37 @@ Budget is under 3900, ideally 1B >= 700 sqft.
 | 2 | Cherry Orchard | value candidate | Shea, deeper community layout | thin-wall risk, must avoid El Camino exposure | top floor + deep interior building |
 | 3 | Cobalt | not recommended | hardware is not enough to offset risk | San Tomas/Saratoga noise, short-term turnover, garage complaints | only if top-floor courtyard is the last option |
 
-## What It Does
+Verdict labels:
 
-- Compares apartment candidates and labels them as `top pick`, `conditional`, `backup`, `not recommended`, or `eliminate`.
-- Audits resident-review risk, prioritizing recent negative patterns around car break-ins, package theft, pest issues, thin walls, management failures, surprise fees, and unsafe garages.
-- Ranks exact units by floor, window exposure, courtyard/street orientation, Caltrain/BART/VTA, El Camino, San Tomas, SJC, Levi's, public garages, trash rooms, and amenity noise.
-- Preserves preference memory: Irvine Company is avoided by default; Miro is excluded unless reopened by the user; Cobalt is no longer treated as a default top pick.
-- Supports Chinese, English, or bilingual output depending on the user's prompt.
+- `top pick`: worth focusing on, after rechecking current reviews and exact unit.
+- `conditional`: works only with strict floor/orientation/unit conditions.
+- `backup`: acceptable if stronger options fail.
+- `not recommended`: does not fit the core preferences.
+- `eliminate`: hits hard red flags.
 
-## Who It Is For
+## What The Skill Checks
 
-- Renters looking in South Bay who do not want to be fooled by glossy apartment websites or staged tours.
-- Light sleepers and risk-sensitive renters who care about upstairs footsteps, garage safety, package theft, and food delivery flow.
-- People comparing Sunnyvale, Mountain View, Santa Clara, North San Jose, and Cupertino units.
-- Anyone with floorplans, unit maps, Google Maps/Yelp/ApartmentRatings reviews, and not enough patience to cross-check everything manually.
+- Repeated review patterns around car break-ins, package theft, food delivery issues, pests, thin walls, false alarms, fees, and poor management.
+- Real exposure to Caltrain/BART/VTA, El Camino, San Tomas, SJC, Levi's, and public garages.
+- Whether "gated garage" actually means safer parking, or just another tailgating risk.
+- Whether packages are handled by Luxer One, Amazon Hub, concierge, or lobby piles.
+- Whether delivery drivers can legally stop, find the entrance, and leave food in a monitored indoor area.
+- Whether the unit sits near trash rooms, elevators, garage gates, loading docks, pools, BBQs, gyms, fire pits, or other noise sources.
+- Whether the building is actually Type I concrete or the common wood/podium construction.
 
-## What It Is Not
-
-- It is not a live availability database. Prices, units, concessions, and reviews must be rechecked.
-- It is not legal, lease, or safety advice.
-- It does not draft leasing emails by default. The default mode is screening, not negotiation.
-
-## Recommended Usage
-
-```text
-Use bay-area-rental to screen these Bay Area apartments.
-
-My hard requirements:
-- Safe, quiet, clean, responsible management
-- Avoid package/food theft, car break-ins, pests, thin walls
-- Budget:
-- Cities / commute:
-- Unit type:
-
-Candidate apartments / units / links / reviews:
-...
-```
-
-If you only have a floorplan or listing, you can also ask:
-
-```text
-Use bay-area-rental to rank these units in Chinese and English.
-Focus on quietness, garage/package safety, natural light, privacy, and whether I should tour/apply/sign.
-```
-
-More copy-paste prompts live in [docs/prompt-library.md](docs/prompt-library.md), with full examples in [examples/](examples/).
-
-## Usage Options
-
-### Codex Install
-
-If you use Codex, copy the skill folder into your local skills directory:
-
-```bash
-mkdir -p ~/.codex/skills/bay-area-rental
-rsync -a skills/bay-area-rental/ ~/.codex/skills/bay-area-rental/
-```
-
-Then ask Codex:
-
-```text
-Use $bay-area-rental to screen these apartments.
-```
-
-### Other AI Assistants
-
-If you use ChatGPT, Claude, Gemini, or another AI assistant:
-
-1. Open [skills/bay-area-rental/SKILL.md](skills/bay-area-rental/SKILL.md).
-2. Use it as project instructions, a system prompt, or the core instruction for a custom GPT/Claude Project/Gem.
-3. For stronger memory, also attach:
-   - [preference-profile.md](skills/bay-area-rental/references/preference-profile.md)
-   - [property-notes.md](skills/bay-area-rental/references/property-notes.md)
-
-The core of this repo is not tied to one tool; it is a reusable rental-screening judgment framework.
-
-## Docs
+## Docs And Examples
 
 - [Screening checklist](docs/screening-checklist.md): review, map, garage, package, floor, and exposure checks.
-- [Data sources and verification](docs/data-sources.md): what to trust, what to treat as marketing, and what to recheck.
+- [Data sources and verification](docs/data-sources.md): what to trust, what is marketing, and what to recheck.
 - [Prompt library](docs/prompt-library.md): Chinese, English, bilingual, floorplan, review audit, and final signing prompts.
-- [Roadmap](docs/roadmap.md): planned content and feature expansions.
+- [Examples](examples/): sample output shape.
+- [Roadmap](docs/roadmap.md): what could be expanded next.
 - [Contributing guide](CONTRIBUTING.md): how to add apartment notes, fix rules, or contribute examples.
-- GitHub workflow: automatically runs `python scripts/validate_skill.py .` to validate the public skill package.
 
 ## Repository Layout
 
 ```text
 bay-area-rental-skill/
-├── .github/
 ├── README.md
 ├── README.en.md
 ├── LICENSE
@@ -166,18 +133,11 @@ bay-area-rental-skill/
             └── property-notes.md
 ```
 
-## Screening Principles
-
-- Reviews and real geography beat official pages, brands, newness, and `luxury` marketing.
-- Later user corrections override earlier AI recommendations.
-- New-looking Mountain View, Sunnyvale, and Santa Clara apartments are often podium/wood, not true all-concrete Type I.
-- For wood or mixed-structure buildings, prefer top floor plus interior/courtyard/shielded exposure.
-- Gated parking is not enough; check car break-ins, tailgating, cameras, management response, and short-term/corporate rental turnover.
-- Food delivery quality depends on legal short-term parking, building wayfinding, and whether there is a monitored indoor pickup area.
-
 ## Contributing
 
-Contributions are welcome: apartment risk notes, anonymized review patterns, floorplan examples, English prompts, and documentation improvements. Please do not commit private leases, raw chat logs, unredacted addresses, or personally identifiable information.
+Apartment risk notes, review patterns, floorplan examples, English prompts, and documentation improvements are welcome. Good notes explain both the risk and the exact conditions under which the building might still work.
+
+Please do not commit private leases, unredacted addresses, phone numbers, emails, full raw chat logs, or long copied review text.
 
 ## License
 
