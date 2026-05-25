@@ -180,4 +180,4 @@ bay-area-rental-skill/
 
 ## License
 
-Apache-2.0
+Apache-2.0. SPDX: `Apache-2.0`.
